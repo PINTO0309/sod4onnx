@@ -5,8 +5,9 @@ https://github.com/PINTO0309/simple-onnx-processing-tools
 
 [![Downloads](https://static.pepy.tech/personalized-badge/sod4onnx?period=total&units=none&left_color=grey&right_color=brightgreen&left_text=Downloads)](https://pepy.tech/project/sod4onnx) ![GitHub](https://img.shields.io/github/license/PINTO0309/sod4onnx?color=2BAF2B) [![PyPI](https://img.shields.io/pypi/v/sod4onnx?color=2BAF2B)](https://pypi.org/project/sod4onnx/) [![CodeQL](https://github.com/PINTO0309/sod4onnx/workflows/CodeQL/badge.svg)](https://github.com/PINTO0309/sod4onnx/actions?query=workflow%3ACodeQL)
 
-
-## 1. Setup
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/33194443/190423861-1de6e4ac-288f-4868-9048-0f2aa74c37fc.png" />
+</p>
 
 ### 1-1. HostPC
 ```bash
