@@ -1,2 +1,2 @@
 # sod4onnx
-Simple model Output OP Deletion tools for ONNX.
+**S**imple model **O**utput OP **D**eletion tools for **ONNX**.
