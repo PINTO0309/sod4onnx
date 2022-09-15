@@ -54,8 +54,6 @@ def outputs_delete(
 
     output_op_names: List[str]
         Output name to be deleted to the models output OP. \n\
-        If an output OP name other than one that already exists in the model is\n\
-        specified, it is ignored.\n\n\
         e.g.\n\
         output_op_names = ["output1", "output3"]
 

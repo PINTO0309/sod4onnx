@@ -41,9 +41,9 @@ optional arguments:
         Input onnx file path.
 
   -on OUTPUT_OP_NAMES [OUTPUT_OP_NAMES ...], --output_op_names OUTPUT_OP_NAMES [OUTPUT_OP_NAMES ...]
-        Output name to be added to the models output OP.
+        Output name to be deleted to the models output OP.
         e.g.
-        --output_op_names "onnx::Gather_76" "onnx::Add_89"
+        --output_op_names "output1" "output3"
 
   -of OUTPUT_ONNX_FILE_PATH, --output_onnx_file_path OUTPUT_ONNX_FILE_PATH
         Output onnx file path.
@@ -54,12 +54,12 @@ optional arguments:
 
 ## 3. In-script Usage
 ```python
->>> from sod4onnx import outputs_add
->>> help(outputs_add)
+>>> from sod4onnx import outputs_delete
+>>> help(outputs_delete)
 
-Help on function outputs_add in module sod4onnx.onnx_model_output_adder:
+Help on function outputs_delete in module sod4onnx.onnx_model_output_deleter:
 
-outputs_add(
+outputs_delete(
     input_onnx_file_path: Union[str, NoneType] = '',
     onnx_graph: Union[onnx.onnx_ml_pb2.ModelProto, NoneType] = None,
     output_op_names: Union[List[str], NoneType] = [],
@@ -80,11 +80,9 @@ outputs_add(
         onnx_graph If specified, ignore input_onnx_file_path and process onnx_graph.
 
     output_op_names: List[str]
-        Output name to be added to the models output OP.
-        If an output OP name other than one that already exists in the model is
-        specified, it is ignored.
+        Output name to be deleted to the models output OP.
         e.g.
-        output_op_names = ["onnx::Gather_76", "onnx::Add_89"]
+        output_op_names = ["output1", "output3"]
 
     output_onnx_file_path: Optional[str]
         Output onnx file path. If not specified, no ONNX file is output.
@@ -96,8 +94,8 @@ outputs_add(
 
     Returns
     -------
-    outputops_added_graph: onnx.ModelProto
-        onnx.ModelProto with output OP added
+    outputops_deleted_graph: onnx.ModelProto
+        onnx.ModelProto with output OP deleted
 ```
 
 ## 4. CLI Execution
